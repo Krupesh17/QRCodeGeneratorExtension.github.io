@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Extension_Documentation_Style.css">
+    <link rel="stylesheet" href="css/Extension-Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="icon" href="images/logo.png">
+    <title>QR Code Generator(Chrome Extension)</title>
+</head>
+<body>
+
+    <section class="container">
+        <div class="header">
+            <h1>QR Code Generator</h1>
+            <h4>Chrome Extension</h4>
+        </div>
+        
+        <div class="desc-box">
+            <p>
+                <b class="desc-head">Description</b> <br>
+                This Chrome extension is designed to generate QR codes for any URL or Word.
+                And we can download this QR codes as an image. 
+                Which we can then use for different purposes.
+            </p>
+        </div>
+
+        <div class="preview-head-container">
+            <p>
+                <b class="preview-head">Preview</b>
+            </p>
+        </div>
+
+        <div class="chrome-top-search-bar">
+            <div class="top-search-bar-elements">
+
+                <div class="other-btn">
+                    <span class="material-symbols-outlined arrowBack">arrow_back</span>
+                    <span class="material-symbols-outlined arrowForward">arrow_forward</span>
+                    <span class="material-symbols-outlined arrowRefresh">refresh</span>
+                </div>
+                
+                <div class="top-search-bar">
+                    <img id="gLogo" src="https://www.pngkit.com/png/full/178-1783296_g-transparent-circle-google-logo.png" alt="google" width="20px">
+                    <input type="text" id="search-bar-text-field">                                
+                </div>
+
+                <div class="dropDown">
+                    <button class="qrExtension dropbtn" id="dropBtn">
+                        <img src="images/logo.png" alt="QR Code Generator" width="21px">
+                    </button>
+
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="extensionBody">
+                            <b id="heading">QR Code Generator</b>
+                            <div class="inputGroup">
+                                <input type="text" placeholder="Enter URL Here" id="urlInput">
+                            </div>
+                            <button id="generateBtn">Generate QR Code</button>
+                            <div class="qrContainer" id="qrContainer">
+                                <div class="qrInnerContainer">
+                                    <img src="" alt="QR Code" id="qrCode">
+                                </div>
+                                <button id="downloadBtn">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other-btn">
+                    <span class="material-symbols-outlined extension">extension</span>
+                    <span class="material-symbols-outlined accountCircle">account_circle</span>
+                    <span class="material-symbols-outlined moreVert">more_vert</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="steps-heading-container">
+            <p>
+                To see how this <b>QR Code Generator Extension</b> work you need to follow the following steps.
+            </p>
+        </div>
+        <div class="step-flex-container">
+            <div class="step-box">
+                <p>
+                    <b class="step-head">Step 1</b> <br>
+                    Click on <img style="vertical-align: middle;" src="images/logo.png" alt="Extension logo" width="21px"> this icon to open QR Code Generator Extension. 
+                </p>
+                <p>
+                    <b class="step-head">Step 2</b> <br>
+                    Paste an URL or Word in given input field of QR Code Generator Extension.
+                </p>
+            </div>
+            <div class="step-box">
+                <p>
+                    <b class="step-head">Step 3</b> <br>
+                    Click on <span id="highLighter1">Generate QR Code</span> button to generate QR code.
+                </p>
+                <p>
+                    <b class="step-head">Step 4</b> <br>
+                    Click on <span id="highLighter2">Download</span> button to download generated QR code as an Image.
+                </p>
+            </div>
+            <div class="step-box">  <!--step-box-justify-center-->
+                <P>
+                    <b class="step-head">Step 5</b> <br>
+                    Click on <img style="vertical-align: middle;" src="images/logo.png" alt="Extension logo" width="21px"> this icon to close QR Code Generator Extension. 
+                </P>
+                <p style="border: 0; background-color: inherit; box-shadow: none;">
+                    <b class="step-head">Click on the download button to download project file of <span style="color: #581dc5;">QR Code Generator</span> Extension.</b>
+                    <a href="https://github.com/Krupesh17/ChromeExtension_QRCodeGenerator/archive/refs/heads/main.zip" target="_blank" class="btn-download">Download</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/Script_1.js"></script>
+    <script src="js/Script_2.js"></script>
+    <script src="js/FileSaver.js"></script>
+</body>
+</html>

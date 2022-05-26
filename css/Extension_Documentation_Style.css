@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all .2s linear;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=2000");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+
+.header {
+    margin: 10px 10px;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+.header h1 {
+    color: #4a4a4a;
+    font-size: 30px;
+}
+
+.header h4 {
+    color: #581dc5;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.desc-box {
+    font-size: 15px;
+    margin: 10px 10px 20px 10px;
+}
+
+.desc-box .desc-head {
+    color: #343434;
+}
+
+.preview-head-container {
+    font-size: 15px;
+    margin: 0px 10px;
+}
+
+.preview-head {
+    color: #343434;
+}
+
+/* CHROME TOP SEARCH BAR CSS */
+.chrome-top-search-bar {
+    background-color: #363636;
+    padding: 10px;
+    margin: 0px 10px 20px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.top-search-bar-elements {
+    display: flex;
+    align-items: center;
+}
+
+.top-search-bar {
+    background-color: #262626;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#search-bar-text-field {
+    background-color: inherit;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    margin-left: 5px;
+}
+
+.material-symbols-outlined {
+    color: white;
+}
+
+.arrowBack,
+.arrowForward {
+    color: #8b8b8b;
+}
+.arrowForward,
+
+.arrowBack,
+.arrowRefresh,
+.accountCircle,
+.extension {
+    margin: 0 5px;
+}
+
+.other-btn {
+    display: inline-flex;
+}
+
+.steps-heading-container {
+    font-size: 17px;
+    text-align: center;
+    margin: 20px 10px 5px 10px;
+}
+
+.steps-heading-container b {
+    color: #5615cd;
+}
+
+.step-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-box {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.step-box-justify-center {
+    justify-content: center
+}
+
+.step-box p {
+    width: 50%;
+    margin: 5px 10px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+.step-head {
+    color: #343434;
+    font-size: 15px;
+}
+
+.btn-download {
+    background-color: #581dc5;
+    color: white;
+    padding: 2px 8px;
+    margin-top: 5px;
+    margin-right: 12px;
+    float: right;
+    border-radius: 4px;
+}
+
+.btn-download:hover {
+    background-color: #461999;
+}
+
+/* CHROME TOP BAR EXTENSION DROP DOWN */
+.dropDown {
+    float: right;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 300px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.show {
+    display: block;
+}
+
+.qrExtension {
+    margin: 0 5px;
+    border: 0;
+    background-color: inherit;
+    border-radius: 25px; 
+    padding: 5px;
+    cursor: pointer;
+}
+
+.qrExtension > img {
+    vertical-align: middle;
+}
+
+.qrExtension:hover {
+    background-color: #515151;
+}
+
+.qrExtension-Focus {
+    background-color: #515151;
+}
+
+@media all and (max-width: 480px) {
+    .dropdown-content {
+        right: -10px;
+    }
+
+    .other-btn span {
+        display: none;
+    }
+
+    .step-box {
+        flex-direction: column;
+    }
+
+    .step-box p {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 280px) {
+    .dropdown-content {
+        right: -10px;
+        min-width: 250px;
+    }
+
+    .other-btn span {
+        display: none;
+    }
+
+    .step-box {
+        flex-direction: column;
+    }
+
+    .step-box p {
+        width: auto;
+    }  
+}
